@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-mobsdk.mobsdk", function(require, exports, module) {
 var exec    = require('cordova/exec');
 
 
@@ -36,4 +35,3 @@ exports.sms = {
 		cordova.exec(ok, fail, 'mobsdk', 'smsSubmitVerificationCode', [contryCode,phone,verifyCode]);
 	}
 }
-});
